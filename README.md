@@ -1,2 +1,2 @@
-# HTML-Exercises
-HTML练习
+# Web-Exercises
+Web练习

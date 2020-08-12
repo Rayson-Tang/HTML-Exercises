@@ -1,0 +1,43 @@
+.logo {
+    height: 130px;
+    text-align: center;
+}
+
+.top {
+    height: 40px;
+    text-align: center;
+    display: block;
+    margin: 5px;
+}
+
+.search {
+    height: 80px;
+    text-align: center;
+}
+
+.ct {
+    position: relative;
+    top: 50%;
+    height: 100px;
+    text-align: center;
+}
+.bottom {
+    height: 99px;
+    text-align: center;
+    font-size: 12px;
+}
+.grey{
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+.in{
+    height: 30px;
+    width: 430px;
+}
+.btn{
+    height: 30px;
+}
+.grey{
+    color: grey;
+}

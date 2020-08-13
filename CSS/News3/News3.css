@@ -1,0 +1,40 @@
+* {
+    margin: 0 0;
+    padding: 0;
+}
+
+div {
+    margin: 20px auto;
+    border: beige 1px solid;
+    width: 240px;
+    height: 300px;
+}
+
+h3 {
+    font-size: 18px;
+    border: beige 1px solid;
+    border-top: orange 5px solid;
+    font-weight: normal;
+}
+
+li {
+    font-size: 12px;
+    list-style: none;
+    line-height: 26px;
+}
+
+ul {
+    padding: 10px;
+}
+
+img {
+    margin: 7px 0 0 8px;
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}

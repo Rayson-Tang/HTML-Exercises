@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #ad{
+            position: relative;
+            width: 1200px;
+            margin: auto;
+        }
+        #close{
+            position: absolute;
+            top: 0;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="ad">
+    <img src="images/jdad/luzhou.jpg" alt="">
+    <div id="close">
+        <img src="images/jdad/close.jpg" alt="">
+    </div>
+</div>
+
+<script>
+    var close = document.getElementById('close');
+    var ad = document.getElementById('ad')
+    close.onclick = function () {
+        ad.style.display = 'none';
+       
+    }
+</script>
+</body>
+</html>

@@ -9,11 +9,7 @@
             padding: 0;
         }
 
-        div {
-            width: 1363px;
-            height: 665px;
-            background-color: black;
-        }
+
 
         #btn {
             width: 60px;
@@ -27,20 +23,19 @@
     </style>
 </head>
 <body>
-<button id="btn">开灯</button>
-<div></div>
+<button id="btn">关灯</button>
+
 <script>
     var btn = document.getElementById('btn');
-    var bgc = document.querySelector('div');
     var flag = 0;
     btn.onclick = function () {
         if (flag == 0) {
-            btn.textContent = '关灯';
-            bgc.style.backgroundColor = 'white';
+            btn.textContent = '开灯';
+            document.body.style.backgroundColor = 'black';
             flag = 1;
         } else {
-            btn.textContent = '开灯';
-            bgc.style.backgroundColor = 'black';
+            btn.textContent = '关灯';
+            document.body.style.backgroundColor = 'white';
             flag = 0;
         }
     }

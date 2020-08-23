@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            position: absolute;
+            /*border: #850400 1px solid;*/
+            width: 370px;
+            top: 50px;
+            left: 50%;
+            margin-left: -180px;
+        }
+        button{
+            color: #333333;
+        }
+        .text{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span class="text">请输入手机号</span>
+    <input type="text">
+    <button>发送验证码</button>
+</div>
+<script>
+    var btn = document.querySelector('button');
+    var time = 60;
+    btn.addEventListener('click',function () {
+        btn.disabled = true;
+        var timer = setInterval(function () {
+            if (time == 0)
+            {
+                time = 60;
+                clearInterval(timer);
+                btn.disabled = false;
+                btn.innerHTML = '发送验证码'
+            }
+            else {
+                btn.innerHTML = '还剩下' + time + '秒';
+                btn.style.color = 'gray'
+                time--;
+            }
+        },1000)
+
+    })
+    function countdown() {
+
+    }
+</script>
+</body>
+</html>
